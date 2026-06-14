@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ui:UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ui="UnityEngine.UIElements"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd"
+>
+    <ui:Style src="Stiller.uss" />
+    
+    <!-- Ana kaplama: Ekranin yuzde yuzunu kaplayip icindekileri merkeze hizalar -->
+    <ui:VisualElement style="width: 100%; height: 100%; flex-grow: 1; align-items: center; justify-content: center; background-color: transparent;">
+        
+        <ui:VisualElement class="container">
+            <ui:Label text="BESLENME PROGRAMI" class="title-label" />
+            
+            <ui:ScrollView class="scroll-view" show-vertical-scroller="true">
+                <ui:VisualElement class="card">
+                    <ui:Label text="[SABAH]" class="meal-title" />
+                    <ui:Label text="- 2 adet haslanmis yumurta beyazi&#10;- 1 dilim tam bugday ekmegi&#10;- Tuzsuz lor peyniri ve bol yesillik" class="meal-content" />
+                </ui:VisualElement>
+
+                <ui:VisualElement class="card">
+                    <ui:Label text="[OGLE]" class="meal-title" />
+                    <ui:Label text="- Zeytinyagli enginar veya izgara tavuk gogsu&#10;- 1 kase probiyotik yogurt&#10;- Kucuk porsiyon karabugday pilavi" class="meal-content" />
+                </ui:VisualElement>
+
+                <ui:VisualElement class="card">
+                    <ui:Label text="[ARA OGUN]" class="meal-title" />
+                    <ui:Label text="- 1 avuc cig badem veya 1 adet yesil elma&#10;(ONEMLI: Ara ogunleri asla atlama, kan sekerini dengede tutar!)" class="meal-content" />
+                </ui:VisualElement>
+
+                <ui:VisualElement class="card">
+                    <ui:Label text="[AKSAM]" class="meal-title" />
+                    <ui:Label text="- Firinda pismis somon veya bugulama balik&#10;- Haslanmis brokoli&#10;- Bol limonlu, az zeytinyagli yesil salata" class="meal-content" />
+                </ui:VisualElement>
+            </ui:ScrollView>
+        </ui:VisualElement>
+        
+    </ui:VisualElement>
+</ui:UXML>
